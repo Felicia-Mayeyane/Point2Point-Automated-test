@@ -9,14 +9,13 @@ import java.time.Duration;
 
 public class ForgotPassword {
     public static void main(String[] args) {
-        // If ChromeDriver is not in your system PATH, set it like this:
-        // System.setProperty("webdriver.chrome.driver", "/path/to/chromedriver");
+     
 
         // Initialize the Chrome WebDriver
         WebDriver driver = new ChromeDriver();
 
         try {
-            // Open the website (assuming the flow starts from the email entry page)
+           
             driver.get("https://point-to-point-remix-production.up.railway.app");
 
             // Maximize the window
@@ -62,8 +61,7 @@ public class ForgotPassword {
             ));
             sendResetInstructionsButton.click();
 
-            // Optionally wait for a success message or confirmation
-            // e.g., wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("successMessage")));
+           
 
             System.out.println("Forgot password flow completed successfully!");
 
